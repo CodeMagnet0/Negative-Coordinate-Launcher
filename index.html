@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Negative Coordinate Download</title>
+
+<style>
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('MinecraftRegular-Bmg3.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Minecraftia', sans-serif;
+}
+
+body {
+    position: relative;
+    background: url("dirt.png") repeat;
+    background-size: 64px 64px;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header img {
+    image-rendering: pixelated;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 4.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.download-card {
+    background: url("darkerDirt.png") repeat;
+    background-size: 64px 64px;
+    border: 6px solid #3d2b1f;
+    padding: 20px;
+}
+
+.version {
+    color: #ffe082;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.download-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: #225425;
+    border: 4px solid #072209;
+    padding: 22px;
+    margin-top: 20px;
+    transition: 0.15s;
+}
+
+.download-btn:hover {
+    background: #357b37;
+    transform: translateY(-2px);
+}
+
+.download-btn:active {
+    transform: translateY(3px);
+}
+
+.info-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.block {
+    background: url("lighterDirt.png") repeat;
+    background-size: 64px 64px;
+    border: 4px solid #1c0f0c;
+    padding: 18px;
+}
+
+.block h3 {
+    font-size: 18;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #fff59d;
+    outline: 0px;
+}
+
+.block p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.footer {
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+    margin: 40px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <img src="GlobalLogo.png" alt="LOGO">
+    <div class="subtitle">
+        THIS IS JUST A DOWNLOAD LINK FOR THE FNF MOD.
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="download-card">
+
+        <div class="version">
+            VERSION 1.01
+        </div>
+
+        <p style="font-size:14px; line-height:2;">
+            Download the latest launcher for Windows, macOS,
+            and Linux.
+        </p>
+
+        <a href="GlobalLogo.png" download class="download-btn" style="font-size:25px;">
+            DOWNLOAD NOW
+        </a>
+
+        <div class="info-grid">
+
+            <div class="block">
+                <h3>WORLDS</h3>
+                <p>Generate endless terrain and discover biomes.</p>
+            </div>
+
+            <div class="block">
+                <h3>MULTIPLAYER</h3>
+                <p>Join servers and play with friends online.</p>
+            </div>
+
+            <div class="block">
+                <h3>ADVENTURE</h3>
+                <p>Explore caves, gather resources and craft gear.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © NOT AN OFFICIAL MINECRAFT PRODUCT.<br>
+        NOT ASSOCIATED WITH MOJANG OR MICROSOFT
+    </div>
+
+</div>
+
+</body>
+</html>
